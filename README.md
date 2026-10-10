@@ -6,6 +6,11 @@ Site oficial de apresentação do **Café com Kátia Elaine — 3ª Mesa Redonda
 **📍 Local:** Avenida Paulista, São Paulo — SP  
 **🎟️ Modalidades divulgadas:** presencial e online
 
+## 🖼️ Prévia do projeto
+
+![Prévia do Café com Kátia Elaine — site para computador e celular](preview-site.png)
+
+
 ## ✨ Sobre o projeto
 
 O site reúne as principais informações do evento em uma página responsiva, com identidade visual em roxo, creme e dourado.
@@ -37,7 +42,7 @@ O projeto é um site estático e não exige instalação de dependências, servi
 
 ### Publicação no GitHub Pages
 
-1. Envie `index.html` e `README.md` para a raiz do repositório.
+1. Envie `index.html`, `README.md` e `preview-site.png` para a raiz do repositório.
 2. No GitHub, acesse **Settings → Pages**.
 3. Em **Build and deployment**, selecione **Deploy from a branch**.
 4. Escolha a branch `main` e a pasta **/(root)** e salve.
@@ -63,8 +68,9 @@ Links configurados no projeto:
 
 ```text
 📁 cafe-com-katia-elaine/
-├── index.html   # Página completa, incluindo estilos, scripts e imagens
-└── README.md    # Documentação do projeto
+├── index.html       # Página completa, incluindo estilos, scripts e imagens
+├── preview-site.png # Imagem de apresentação exibida no README
+└── README.md        # Documentação do projeto
 ```
 
 ## 📲 Contato e redes sociais
