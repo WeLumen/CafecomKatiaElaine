@@ -94,7 +94,21 @@
     @media (max-width:600px){body{background:var(--cream)}.page-bg{padding:0;background:var(--cream)}.shell{max-width:none;border:none;box-shadow:none;border-radius:0}.masthead{padding:27px 22px 31px}.logo-wrap{margin-top:20px;margin-bottom:13px;width:137px;height:137px}.brand-name{font-size:30px}.masthead h1{font-size:25px}main{padding:0 20px 6px}.featured{margin-top:18px;padding:23px 21px 19px}.featured h2{font-size:28px}.section-intro{margin-top:29px}.link-card{padding:14px 12px}.link-copy strong{font-size:13px}.foot{padding-bottom:calc(25px + env(safe-area-inset-bottom))}}
     @media (max-width:365px){main{padding-inline:14px}.masthead{padding-inline:17px}.brand-name{font-size:28px}.featured h2{font-size:26px}.link-card{gap:9px}.link-card .icon-box{width:38px;height:38px}}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.featured,.link-card{transition:none}}
-  </style>
+  
+    /* Perfis do Instagram ao final da bio */
+    .social-bottom{margin:24px 0 19px;text-align:center;padding:17px 14px 15px;border:1px solid #e7d9cc;border-radius:17px;background:var(--paper)}
+    .social-bottom .social-kicker{color:var(--purple);margin:0 0 13px;font-size:10px}
+    .social-bottom .social-kicker::before,.social-bottom .social-kicker::after{background:var(--gold)}
+    .social-bottom .social-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .social-bottom .social-links a{min-width:0;border-radius:12px;justify-content:flex-start;text-align:left;padding:10px 9px;gap:7px;background:#fffefa;border-color:#e6d9d0;transition:border-color .18s,background .18s,transform .18s}
+    .social-bottom .social-links svg{flex:none;width:17px;height:17px;color:var(--purple)}
+    .social-bottom .ig-copy{display:block;min-width:0;flex:1}
+    .social-bottom .ig-copy strong{font-size:11px;line-height:1.3;display:block;color:var(--purple)}
+    .social-bottom .ig-copy small{font-size:9px;line-height:1.3;font-weight:600;color:#82737b;display:block;overflow-wrap:anywhere;margin-top:2px}
+    .social-bottom .ig-arrow{font-size:13px;color:#937d89;align-self:flex-start;flex:none}
+    @media (hover:hover){.social-bottom .social-links a:hover{border-color:var(--gold);background:#fffbee;transform:translateY(-2px)}}
+    @media (max-width:365px){.social-bottom{padding-inline:10px}.social-bottom .social-links a{gap:5px;padding:9px 7px}.social-bottom .ig-copy strong{font-size:10px}.social-bottom .ig-copy small{font-size:8.5px}.social-bottom .ig-arrow{display:none}}
+</style>
 </head>
 <body>
 <div class="page-bg">
@@ -157,13 +171,17 @@
 <a href="https://www.instagram.com/akatiaelaine/" rel="noopener noreferrer" target="_blank">Conheça sua trajetória ↗</a>
 </div>
 </section>
-<section aria-label="Siga nossas redes" class="social">
-<p class="social-kicker">Estamos no Instagram</p>
+
+<section aria-label="Perfis no Instagram" class="social social-bottom">
+<p class="social-kicker">Acompanhe no Instagram</p>
 <div class="social-links">
-<a href="https://www.instagram.com/cafecomkatiaelaine/" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01" stroke-width="2.8"></path></svg> @cafecomkatiaelaine</a>
-<a href="https://www.instagram.com/akatiaelaine/" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01" stroke-width="2.8"></path></svg> @akatiaelaine</a>
+<a href="https://www.instagram.com/cafecomkatiaelaine/" aria-label="Abrir Instagram: Café com Kátia Elaine" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01" stroke-width="2.8"></path></svg><span class="ig-copy"><strong>Café com Kátia</strong><small>@cafecomkatiaelaine</small></span><span class="ig-arrow" aria-hidden="true">↗</span></a>
+<a href="https://www.instagram.com/akatiaelaine/" aria-label="Abrir Instagram: Kátia Elaine" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01" stroke-width="2.8"></path></svg><span class="ig-copy"><strong>Kátia Elaine</strong><small>@akatiaelaine</small></span><span class="ig-arrow" aria-hidden="true">↗</span></a>
+<a href="https://www.instagram.com/abp.podologia/" aria-label="Abrir Instagram: Associação Brasileira de Podólogos" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01" stroke-width="2.8"></path></svg><span class="ig-copy"><strong>ABP · Podologia</strong><small>@abp.podologia</small></span><span class="ig-arrow" aria-hidden="true">↗</span></a>
+<a href="https://www.instagram.com/pododay/" aria-label="Abrir Instagram: PodoDay" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01" stroke-width="2.8"></path></svg><span class="ig-copy"><strong>PodoDay</strong><small>@pododay</small></span><span class="ig-arrow" aria-hidden="true">↗</span></a>
 </div>
 </section>
+
 </main>
 <footer class="foot">
 <p>Café com Kátia Elaine · São Paulo, Brasil</p>
