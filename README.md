@@ -13,7 +13,7 @@ Site oficial de apresentação do **Café com Kátia Elaine — 3ª Mesa Redonda
 
 ## ✨ Sobre o projeto
 
-O site reúne as principais informações do evento em uma página responsiva, com identidade visual em roxo, creme e dourado.
+O site reúne as principais informações do evento em uma página responsiva, com identidade visual em roxo, creme e amarelo oficial (`#FAC504`).
 
 ### Funcionalidades
 
