@@ -50,6 +50,14 @@ O projeto é um site estático e não exige instalação de dependências, servi
 
 > O `index.html` foi otimizado para ficar abaixo do limite de 25 MB da interface de upload do GitHub.
 
+## Check-in na recepção
+
+Abra o site por HTTPS ou em um servidor local no endereço `localhost`. Clique em **Check-in do evento** e selecione o PDF de respostas com a coluna **Nome**. Busque pelo nome e clique em **Confirmar presença**. Para desfazer uma marcação, clique em **Presença confirmada**.
+
+O PDF e as marcações são salvos no navegador do aparelho usado na recepção. Importe o PDF na primeira utilização. Nas próximas visitas, o botão abre a lista automaticamente no mesmo navegador e endereço. Use um único aparelho para manter a contagem da recepção.
+
+Para publicar o painel, inclua `checkin.js` e a pasta `assets/pdfjs/` junto com `index.html`. O PDF de respostas fica com a equipe da recepção.
+
 ## 🎟️ Inscrição e pagamento
 
 A jornada apresentada no site é:

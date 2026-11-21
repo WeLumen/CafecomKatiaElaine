@@ -2409,6 +2409,42 @@
       #sobre .ke-portrait-sparkle-a { right: 4%; top: 9%; }
       #sobre .ke-portrait-sparkle-b { left: 4%; bottom: 15%; }
       @media(max-width:650px) { #sobre .aboutArt.ke-portrait-card { max-width: 430px; } }
+      #checkin-open { font-family: inherit; cursor: pointer; }
+      #checkin-dialog {
+        width: min(42rem, calc(100% - 2rem));
+        max-height: calc(100dvh - 2rem);
+        padding: clamp(1rem, 4vw, 2rem);
+        border: 0;
+        border-radius: 1rem;
+        background: #fff9ed;
+        color: #311744;
+      }
+      #checkin-dialog::backdrop { background: rgb(25 11 35 / 72%); }
+      #checkin-dialog h2 { margin: 0; font-size: clamp(1.65rem, 5vw, 2.4rem); }
+      #checkin-dialog p { margin-block: .65rem; }
+      #checkin-dialog label { display: block; font-weight: 700; margin-top: .8rem; }
+      #checkin-dialog input { width: 100%; padding: .55rem; font: inherit; }
+      #checkin-dialog button {
+        padding: .5rem .75rem;
+        border: 1px solid #654578;
+        border-radius: .5rem;
+        background: #fff;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+      }
+      #checkin-dialog button[aria-pressed="true"] { background: #e4f4e7; }
+      .checkin-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+        padding: .65rem 0;
+        border-top: 1px solid #dfd1e3;
+      }
+      #checkin-list { margin: 0; padding: 0; list-style: none; }
+      #checkin-close { float: right; margin-left: .5rem; }
     </style>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&amp;display=swap"/>
   </head>
@@ -2464,6 +2500,7 @@
             <div class="buttons">
               <a class="btnGold" href="#ingressos">Conhecer ingressos ↗</a
               ><a class="btnOutline" href="#sobre">Conhecer o evento ↓</a>
+              <button class="btnOutline" id="checkin-open" type="button" aria-haspopup="dialog">Check-in do evento</button>
             </div>
           </div>
           <div class="heroVisual">
@@ -3380,6 +3417,26 @@
         </div>
       </div>
     </div>
+    <dialog id="checkin-dialog" aria-labelledby="checkin-title">
+      <form method="dialog">
+        <button id="checkin-close" type="submit">Fechar</button>
+      </form>
+      <h2 id="checkin-title">Check-in do evento</h2>
+      <p>Painel da recepção. A lista e as presenças ficam salvas neste navegador.</p>
+      <details id="checkin-import" open>
+        <summary>Lista de inscritos em PDF</summary>
+        <label for="checkin-file">Selecionar PDF de respostas</label>
+        <input id="checkin-file" type="file" accept=".pdf,application/pdf" />
+      </details>
+      <div id="checkin-roster" hidden>
+        <label for="checkin-search">Buscar por nome</label>
+        <input id="checkin-search" type="search" autocomplete="off" />
+        <p id="checkin-count" role="status"></p>
+        <ul id="checkin-list"></ul>
+      </div>
+      <p id="checkin-message" role="status"></p>
+    </dialog>
+    <script src="checkin.js" defer></script>
     <script>
       (() => {
         "use strict";
